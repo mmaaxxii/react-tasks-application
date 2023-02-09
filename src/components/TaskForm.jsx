@@ -11,6 +11,8 @@ function TaskForm({createTask}) {
       title,
       description
     })
+    setTitle('')
+    setDescription('')
     
   }
 
@@ -18,10 +20,14 @@ function TaskForm({createTask}) {
     <div>
         <form onSubmit={handleSubmit}>
             <input placeholder="Escribe tu tares"
-            onChange={(e) => setTitle(e.target.value)}/>
+            onChange={(e) => setTitle(e.target.value)}
+            value={title}
+            autoFocus={true} />
             <textarea placeholder="Escribe la descripcion"
-            onChange={(e) => setDescription(e.target.value)}/>
-
+            onChange={(e) => setDescription(e.target.value)}
+            value={description} 
+             />
+            <h1>a tu mama le gusta pro las nalgas</h1>
             <button>
                 Guardar
             </button>
