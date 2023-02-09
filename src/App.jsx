@@ -4,8 +4,8 @@ import TaskForm from "./components/TaskForm";
 function App() {
   return (
   <div>
-    <TaskForm createTask={createTask}/>
-    <TaskList tasks={tasks} deleteTask={deleteTask}  />
+    <TaskForm/>
+    <TaskList/>
   </div>
   );
 }
